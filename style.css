@@ -1,0 +1,51 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+a {
+    color: green;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+
+#kafka-bg-container {
+    float: right;
+    margin-top: -22px;
+    max-width: 634px;
+}
+
+/* hack: make the background disappear on narrow screens
+ */
+@media only screen and (max-width: 1034px) {
+    #kafka-bg-container {
+        width: 1px;
+    }
+}
+
+#text-container {
+    line-height: 150%;
+    margin-left: 2em;
+    margin-right: 2em;
+    max-width: 400px;
+    padding-top: 2em;
+}
+
+/* hackL: invisible hr
+*/ 
+hr {
+    border: 0px;
+}
+
+#small-print {
+    bottom: 0;
+    font-size: 9px;
+    position: absolute;
+}
