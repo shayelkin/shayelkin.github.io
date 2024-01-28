@@ -5,15 +5,16 @@ body {
     font-weight: 300;
 }
 
-a {
-    color: green;
-}
-
 @media (prefers-color-scheme: dark) {
     body {
         background-color: black;
         color: white;
     }
+}
+
+/* works for both light and dark modes */
+a {
+    color: green;
 }
 
 #kafka-bg-container {
@@ -22,8 +23,7 @@ a {
     max-width: 634px;
 }
 
-/* hack: make the background disappear on narrow screens
- */
+/* hack: make the background not overtake small screens */
 @media only screen and (max-width: 1034px) {
     #kafka-bg-container {
         width: 1px;
@@ -38,8 +38,7 @@ a {
     padding-top: 2em;
 }
 
-/* hackL: invisible hr
-*/ 
+/* hack: invisible hr */ 
 hr {
     border: 0px;
 }
