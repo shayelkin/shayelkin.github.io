@@ -6,6 +6,8 @@ body {
 }
 
 #he {
+    /* can't trust the default Hebrew font to be a sane choice */
+    font-family: 'SF Hebrew', 'Arial Hebrew', 'Arial', sans-serif;
     direction: rtl;
 }
 
