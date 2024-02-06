@@ -5,6 +5,10 @@ body {
     font-weight: 300;
 }
 
+#he {
+    direction: rtl;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: black;
