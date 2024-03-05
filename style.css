@@ -5,12 +5,6 @@ body {
     font-weight: 300;
 }
 
-#he {
-    /* can't trust the default Hebrew font to be a sane choice */
-    font-family: 'SF Hebrew', 'Arial Hebrew', 'Arial', sans-serif;
-    direction: rtl;
-}
-
 @media (prefers-color-scheme: dark) {
     body {
         background-color: black;
@@ -18,8 +12,14 @@ body {
     }
 }
 
-/* works for both light and dark modes */
+#he {
+    /* can't trust the default Hebrew font to be a sane choice */
+    font-family: 'SF Hebrew', 'Arial Hebrew', 'Arial', sans-serif;
+    direction: rtl;
+}
+
 a {
+    /* works for both light and dark modes */
     color: green;
 }
 
@@ -44,13 +44,17 @@ a {
     padding-top: 2em;
 }
 
+#text-container img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
 /* hack: invisible hr */ 
-hr {
+#text-container hr {
     border: 0px;
 }
 
 #small-print {
-    bottom: 0;
     font-size: 9px;
-    position: absolute;
 }
