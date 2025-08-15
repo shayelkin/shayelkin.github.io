@@ -1,0 +1,27 @@
+#+title: The Art in My Home Office
+#+date: 2023-01-17
+
+If you were on a video call with me, you must've seen the prints hanging
+behind me. Colleagues often ask about them:
+
+Hanging to my left is a signed print by [[https://www.davidreeb.com/][David Reeb]] of his 2021 painting titled
+/Two Emperors (Hadrianus & Vespasian)/.
+
+#+ATTR_HTML: :alt A black and white painting of two Roman busts, side by side. On top of the classical looking busts, there's a cruder markings in black of sunglasses, and huge, toothy grins.
+[[./home-office-art-reeb.jpg]]
+
+Reeb had the following to say about it (in [[https://tohumagazine.com/he/article/%D7%97%D7%A0%D7%95%D7%AA-%D7%98%D7%A4%D7%98%D7%99%D7%9D-%D7%A9%D7%99%D7%97%D7%94-%D7%A2%D7%9D-%D7%93%D7%95%D7%93-%D7%A8%D7%99%D7%91][Tohu Magazine, 2021]]; translation mine):
+
+#+BEGIN_QUOTE
+Take here those portraits […] the “tyrat” emperors who are another model of
+politicians. To me, they and Putin represent something similar, they represent
+authority, a splendor that is inherently ridiculous.
+#+END_QUOTE
+
+On the wall to my right hangs a reproduction of a [[https://fdr.artifacts.archives.gov/en/objects/20669/learn-to-operate-a-7000000-sub][U.S. Navy recruitment poster
+from 1944]], captioned /Learn To Operate a $7,000,000 Sub/.
+
+#+ATTR_HTML: :alt A drawing of a shitless sailor, standing in front of a wall full of gagues and valves. He is giving the viewer a come hither look. An all caps text in red, blue and black above and below him reads "Learn to operate a $7,000,000 SUB: Join the submarine service"
+[[./home-office-art-sub.jpg]]
+
+If someone asks about it, I joke it is an ad for Kubernetes (iykyk).

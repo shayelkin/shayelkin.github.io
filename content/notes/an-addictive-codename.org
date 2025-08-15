@@ -1,0 +1,14 @@
+#+title: An Addictive Codename
+#+date: 2018-10-02
+
+Years ago, at one of my first software jobs, my team and I were tasked with
+rewriting a math app to utilize a new software framework. That framework had the
+codename /Glass/, and we followed that theme and gave the app itself the
+codename /Crystal/, or /Crystal Math/ in full.
+
+As it was far from finished, the app couldn't run by itself, so we wrote a tool to
+run the lines of code that were ready, and named that tool /Lines/.
+
+The team was quite productive, with everyone crackin' hard and running /Lines/
+of /Crystal Math/ all day long. Or at least we did until management found out,
+and insisted we'd replace those codenames with less addictive ones.

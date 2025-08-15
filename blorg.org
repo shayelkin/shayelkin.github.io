@@ -1,0 +1,98 @@
+#+AUTHOR: Shay Elkin
+#+BASE_URL: /
+#+OPTIONS: toc:nil title:nil
+#+CONTENT: ./content
+#+PUBLIC: ./public
+
+* templates
+** signal_icon
+#+name: signal_icon
+#+begin_src html
+<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor">
+<path d="m48-96 81-276q-16-36-24.5-75T96-528q0-80 30-149.5t82.5-122Q261-852 330.96-882t149.5-30q79.54 0 149.04 30 69.5 30 122 82.5T834-677.28q30 69.73 30 149Q864-449 834-379t-82.5 122.5Q699-204 629.5-174T480-144q-42 0-81-8.5T324-177L48-96Zm107-107 174-51q11 5 51 21.5T480-216q130 0 221-91t91-221q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 60 16 99.5t22 51.5l-51"/>
+</svg>
+#+end_src
+
+** head
+#+name: head
+#+begin_src html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="/style.css" type="text/css" />
+      <title>{{ .Title }}{{ and .Title " - " }}Shay Elkin</title>
+    </head>
+    <body>
+      <header class='header'>
+        <h1>
+          <a href="/">Shay Elkin</a>
+          {{ if .Title }}>
+          <span class='title'> <a href="{{ .PermaLink }}">{{ .Title }}</a> </span>
+          {{end}}
+        </h1>
+        <nav> <a href="/dm/"> {{ template "signal_icon" . }} </a> </nav>
+      </header>
+      <p class="date">
+      <date>{{ .Date.Format "January 02, 2006" }}</date>
+      </p>
+#+end_src
+
+** list
+#+name: list
+#+begin_src html
+  <!-- this page is left empty -->
+#+end_src
+
+** footer
+#+name: footer
+#+begin_src html
+  <div id="disclaimer">
+  This website is hosted on GitHub pages, which
+  <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection">
+  collects some data about visitors</a>.
+  </div>
+  </body>
+  </html>
+#+end_src
+
+** index
+#+name: index
+#+begin_src html
+  {{ template "head" . }}
+  {{ template "about" . }}
+  <ul class="posts">
+    {{ range .Pages }}
+    <li class="post">
+      <a href="{{ .PermaLink }}">
+        <span>{{ .Title }}</span>
+        <date>{{ .Date.Format "January 02, 2006" }}</date>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+
+  {{ template "footer" . }}
+#+end_src
+
+** about
+#+name: about
+#+begin_src html
+  <p>
+  I live with my <a href="https://www.adielkin.com/">partner</a> in an old house
+  in Berkeley, California, and work as a software engineer at Confluent, where my
+  team and I develop the <a href="https://www.confluent.io/cloud-kafka/">
+  cloud-native version of Kafka</a>.
+  </p>
+#+end_src
+
+** item
+#+name: item
+#+begin_src html
+  {{ template "head" . }}
+  <div class="content">
+  {{ .Content }}
+  </div>
+  {{ template "footer" . }}
+#+end_src
