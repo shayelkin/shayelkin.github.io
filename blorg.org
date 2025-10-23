@@ -25,38 +25,35 @@
       <title>{{ .Title }}{{ and .Title " - " }}Shay Elkin</title>
     </head>
     <body>
-      <header class='header'>
+      <header>
         <h1>
+          {{ if .Title }}<strong><a href="{{ .PermaLink }}">{{ .Title }}</a></strong> &mdash;{{end}}
           <a href="/">Shay Elkin</a>
-          {{ if .Title }}>
-          <span class='title'> <a href="{{ .PermaLink }}">{{ .Title }}</a> </span>
-          {{end}}
         </h1>
-        <nav> <a href="/dm/"> {{ template "signal_icon" . }} </a> </nav>
+        <nav>
+          <a href="/dm/">{{ template "signal_icon" . }}</a>
+        </nav>
       </header>
       {{ if ne .Date.Unix 0 }}
-      <p class="date">
-      <date>{{ .Date.Format "January 02, 2006" }}</date>
+      <p class="date"><date>{{ .Date.Format "January 02, 2006" }}</date></p>
       {{ end }}
-      </p>
+      <main>
 #+end_src
 
 ** list
 #+name: list
 #+begin_src html
-  <!-- this page is left empty -->
+  <!-- blorg fails if this subtree is missing, but I don't use it myself -->
 #+end_src
 
 ** footer
 #+name: footer
 #+begin_src html
-  <div id="disclaimer">
-  This website is hosted on GitHub pages, which
-  <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection">
-  collects some data about visitors</a>.
-  </div>
-  </body>
-  </html>
+  </main>
+  <footer>
+  This website is hosted on GitHub Pages. They <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection">collect some data about visitors</a>.
+  </footer>
+  </body></html>
 #+end_src
 
 ** index
@@ -74,27 +71,24 @@
     </li>
     {{ end }}
   </ul>
-
+  </main>
   {{ template "footer" . }}
 #+end_src
 
 ** about
 #+name: about
 #+begin_src html
-  <p>
-  I live with my <a href="https://www.adielkin.com/">partner</a> in an old house
-  in Berkeley, California, and work as a software engineer at Confluent, where my
-  team and I develop the <a href="https://www.confluent.io/cloud-kafka/">
-  cloud-native version of Kafka</a>.
-  </p>
+    <p>
+      I am a software engineer at Confluent, where my team develops the cloud-native
+      version of Apache Kafka. I live with my <a href="https://adielkin.com/">partner</a>
+      in an old Queen Anne style house in Berkeley, California.
+    </p>
 #+end_src
 
 ** item
 #+name: item
 #+begin_src html
   {{ template "head" . }}
-  <div class="content">
-  {{ .Content }}
-  </div>
+  <div class="content">{{ .Content }}</div>
   {{ template "footer" . }}
 #+end_src

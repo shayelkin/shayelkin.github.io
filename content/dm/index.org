@@ -1,3 +1,3 @@
 #+TITLE: Signal
-You can use [[https://signal.me/#eu/wAJwOC1XrORc7jHEEtk8rnQNpZ2uirFwYciwxhBVYB2-A4sYHYREeqedpHsv28h][this link]], or the following QR code, to contact me on [[https://signal.org][Signal]].
+To message me on [[https://signal.org][Signal]], use [[https://signal.me/#eu/wAJwOC1XrORc7jHEEtk8rnQNpZ2uirFwYciwxhBVYB2-A4sYHYREeqedpHsv28h][this link]], or the QR code below:
 [[./signal_qr.png]]

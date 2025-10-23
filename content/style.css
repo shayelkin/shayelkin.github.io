@@ -1,236 +1,251 @@
 :root {
-  --bg-color: #fff;
-  --fg-color: #000;
-  --hl-color: #9370db;
-  --border-color: #ccc;
-  --light-bg-color: #eee;
+    --bg-color: #fff;
+    --light-bg-color: #eee;
+    --border-color: #ccc;
+    --hl-color: #9370db;
+    --text-color: #000;
+    --light-text-color: #aaa;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #000;
-    --fg-color: #fff;
-    --hl-color: #9370db;
-    --border-color: #aaa;
-    --light-bg-color: #333;
-  }
-}
+    :root {
+        --bg-color: #000;
+        --light-bg-color: #333;
+        --border-color: #aaa;
+        --text-color: #fff;
+        --hl-color: #9370db;
+        --light-text-color: #eee;
+    } }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  background-color: var(--bg-color);
-  color: var(--fg-color);
-  overflow-y: scroll;
-  height: 100%;
-  font: 100%/1.5 sans-serif;
-  word-wrap: break-word;
-  margin: 0 auto;
-  padding: 1.5em;
+    overflow-y: scroll;
+    height: 100%;
+    font: 100%/1.5 sans-serif;
+    word-wrap: break-word;
+    margin: 0 auto;
+    padding: 1.5em;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 125%;
-    max-width: 769px;
-  }
-}
+    html {
+        font-size: 125%;
+        max-width: 769px;
+    } }
 
 h1, h2, h3, h4 {
-  line-height: 1.25;
+    line-height: 1.25;
 }
 
 a {
-  color: var(--hl-color);
-  text-decoration: none;
+    color: var(--hl-color);
+    text-decoration: none;
 }
 a:hover, a:focus, a:active {
-  background-color: var(--light-bg-color);
+    background-color: var(--light-bg-color);
 }
 
 p {
-  margin: 1em 0;
-  line-height: 1.5;
+    margin: 1em 0;
+    line-height: 1.5;
 }
 p code {
-  padding: 0.05em 0.2em;
-  border: 1px solid var(--border-color);
+    padding: 0.05em 0.2em;
+    border: 1px solid var(--border-color);
 }
 
 ol, ul {
-  margin: 1em;
+    margin: 1em;
 }
 ol li ol, ol li ul, ul li ol, ul li ul {
-  margin: 0 2em;
+    margin: 0 2em;
 }
 ol li p, ul li p {
-  margin: 0;
+    margin: 0;
 }
 
 dl {
-  font-family: monospace, monospace;
+    font-family: monospace, monospace;
 }
 dl dt {
-  font-weight: bold;
+    font-weight: bold;
 }
 dl dd {
-  margin: 1em;
+    margin: 1em;
 }
 
 img {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-  padding: 0.5em;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em;
 }
 
 blockquote {
-  padding-left: 1em;
-  font-style: italic;
-  border-left: solid 1px var(--hl-color);
+    padding-left: 1em;
+    border-left: solid 1px var(--hl-color);
 }
 
 table {
-  font-size: 1rem;
-  text-align: left;
-  caption-side: bottom;
-  margin-bottom: 2em;
+    font-size: 1rem;
+    text-align: left;
+    caption-side: bottom;
+    margin-bottom: 2em;
 }
 table * {
-  border: none;
+    border: none;
 }
 table thead, table tr {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
 }
 table tr:nth-child(even) {
-  background-color: var(--light-bg-color);
+    background-color: var(--light-bg-color);
 }
 table tbody {
-  display: block;
-  max-height: 70vh;
-  overflow-y: auto;
+    display: block;
+    max-height: 70vh;
+    overflow-y: auto;
 }
 table td, table th {
-  padding: 0.25em;
+    padding: 0.25em;
 }
 
 table, .highlight > pre, pre.example {
-  max-height: 70vh;
-  margin: 1em 0;
-  padding: 1em;
-  overflow: auto;
-  font-size: 0.85rem;
-  font-family: monospace, monospace;
-  border: 1px dashed var(--border-color);
+    max-height: 70vh;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: auto;
+    font-size: 0.85rem;
+    font-family: monospace, monospace;
+    border: 1px dashed var(--border-color);
+}
+
+.title {
+    font-size: 2.5em;
 }
 
 .subtitle {
-  font-weight: normal;
-  font-size: 0.75em;
+    font-weight: normal;
+    font-size: 0.75em;
 }
 
 .tags {
-  margin-top: -1.5rem;
-  padding-bottom: 1.5em;
+    margin-top: -1.5rem;
+    padding-bottom: 1.5em;
 }
 .tags li {
-  display: inline;
-  margin-right: 0.5em;
+    display: inline;
+    margin-right: 0.5em;
 }
 
 figure {
-  margin: 1em 0;
+    margin: 1em 0;
 }
 figure figcaption {
-  font-family: monospace, monospace;
-  font-size: 0.75em;
-  text-align: center;
+    font-size: 0.75em;
+    text-align: center;
+    color: var(--light-text-color);
 }
 
 .footnote-definition sup {
-  margin-left: -1.5em;
-  float: left;
+    margin-left: -1.5em;
+    float: left;
 }
 
 .footnote-definition .footnote-body {
-  margin: 1em 0;
-  padding: 0 1em;
-  border: 1px dashed var(--border-color);
-  background-color: var(--light-bg-color);
+    margin: 1em 0;
+    padding: 0 1em;
+    border: 1px dashed var(--border-color);
+    background-color: var(--light-bg-color);
 }
 .footnote-definition .footnote-body p:only-child {
-  margin: 0.2em 0;
+    margin: 0.2em 0;
 }
 
 header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
 }
 header h1 {
-  margin: 0;
-  font-size: 100%;
-  font-weight: normal;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
 
 }
 header h1 .title {
-  font-weight: bold;
+    font-weight: bold;
 }
+
 header nav {
-  color: var(--fg-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .posts {
-  margin-left: 0;
-  margin-right: 0;
-  list-style: none;
+    margin: auto 0;
+    list-style: none;
 }
 .posts .post a {
-  display: block;
-  padding: 0.25em 0;
-  color: var(--fg-color);
-  font-weight: light;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* display: block; */
+     padding: 0.25em 0;
+    font-weight: light;
 }
 .posts .post a:hover, .posts .post a:focus, .posts .post a:active {
-  text-decoration: none;
-  background: var(--light-bg-color);
+    text-decoration: none;
+    background: var(--light-bg-color);
 }
-.posts .post a {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.posts .post date {
+    vertical-align: middle;
 }
 
-.posts .post date, .date {
-  font-size: 0.7rem;
-  vertical-align: middle;
-  padding-left: 2rem;
+date {
+    /* font-family: monospace, monospace; */
+    font-size: 0.8rem;
+    vertical-align: middle;
+    color: var(--light-text-color);
 }
+
+/* .posts .post a { */
+/*     display: flex; */
+/*     justify-content: space-between; */
+/*     align-items: center; */
+/* } */
+/* .posts .post date, .date { */
+/*     font-size: 0.7rem; */
+/*     vertical-align: middle; */
+/*     padding-left: 2rem; */
+/* } */
 
 .date {
-  text-align: right;
+    text-align: right;
 }
 
 .content {
-  padding-bottom: 3em;
+    padding-bottom: 3em;
 }
 
-#disclaimer {
-  backdrop-filter: blur(5px);
-  bottom: 0;
-  font-size: 8pt;
-  left: 1em;
-  position: fixed;
-  z-index: 1000;
+footer {
+    backdrop-filter: blur(5px);
+    bottom: 0;
+    font-size: 8pt;
+    left: 1em;
+    position: fixed;
+    z-index: 1000;
 }
