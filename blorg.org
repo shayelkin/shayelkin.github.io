@@ -78,11 +78,12 @@
 ** about
 #+name: about
 #+begin_src html
-    <p>
-      I am a software engineer at Confluent, where my team develops the cloud-native
-      version of Apache Kafka. I live with my <a href="https://adielkin.com/">partner</a>
-      in an old Queen Anne style house in Berkeley, California.
-    </p>
+  <p>
+    I am a software engineer at Confluent, where my team and myself
+    develop the cloud-native version of Apache Kafka.
+    I live with my <a href="https://aikidolittlewarriors.com/#instructor">partner</a>
+    in an old Queen Anne style house in Berkeley, California.
+  </p>
 #+end_src
 
 ** item
