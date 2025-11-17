@@ -2,7 +2,7 @@
     --bg-color: #fff;
     --light-bg-color: #eee;
     --border-color: #ccc;
-    --hl-color: #9370db;
+    --hl-color: #3cab3b;
     --text-color: #000;
     --light-text-color: #aaa;
 }
@@ -13,7 +13,7 @@
         --light-bg-color: #333;
         --border-color: #aaa;
         --text-color: #fff;
-        --hl-color: #9370db;
+        --hl-color: #b4eeb4;
         --light-text-color: #eee;
     } }
 
@@ -182,7 +182,6 @@ header h1 {
     margin: 0;
     font-size: 100%;
     font-weight: normal;
-
 }
 header h1 .title {
     font-weight: bold;
@@ -196,6 +195,7 @@ header nav {
 }
 
 .posts {
+    border-top: 1px solid var(--border-color);
     margin: auto 0;
     list-style: none;
 }

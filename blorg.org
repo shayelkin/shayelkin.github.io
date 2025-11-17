@@ -59,30 +59,33 @@
 ** index
 #+name: index
 #+begin_src html
-  {{ template "head" . }}
-  {{ template "about" . }}
-  <ul class="posts">
-    {{ range .Pages }}
-    <li class="post">
-      <a href="{{ .PermaLink }}">
-        <span>{{ .Title }}</span>
-        <date>{{ .Date.Format "January 02, 2006" }}</date>
-      </a>
-    </li>
-    {{ end }}
-  </ul>
-  </main>
-  {{ template "footer" . }}
+   {{ template "head" . }}
+   {{ template "about" . }}
+   <ul class="posts">
+     {{ range .Pages }}
+     <li class="post">
+       <a href="{{ .PermaLink }}">
+         <span>{{ .Title }}</span>
+         <date>{{ .Date.Format "January 02, 2006" }}</date>
+       </a>
+     </li>
+     {{ end }}
+   </ul>
+   </main>
+   {{ template "footer" . }}
 #+end_src
 
 ** about
 #+name: about
 #+begin_src html
+    <img src="/me.jpg" title="Shay and a friend" alt="Shay Elkin, wearing blue sunglasses and an olive colored shirt, poses outdoor, next to a big black dog wearing a Santa Hat." />
   <p>
-    I am a software engineer at Confluent, where my team and myself
-    develop the cloud-native version of Apache Kafka.
+    I am a software engineer at Confluent, where my team and I build and operate the
+    <a href="https://www.confluent.io/cloud-kafka/">cloud version of Apache Kafka</a>.
+  </p>
+  <p>
     I live with my <a href="https://aikidolittlewarriors.com/#instructor">partner</a>
-    in an old Queen Anne style house in Berkeley, California.
+    in an 130 years old Queen Anne style house in California.
   </p>
 #+end_src
 
