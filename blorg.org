@@ -69,8 +69,7 @@
       <img src="/me.jpg" title="Shay and a friend" alt="Shay Elkin, wearing blue sunglasses and an olive colored shirt, poses outdoor, next to a big black dog wearing a Santa Hat." />
     </figure>
     <div style="margin: 0 1em;">
-      <p>Shay Elkin is a software engineer at Confluent, working on the team building <a href="https://www.confluent.io/cloud-kafka/">Kafka for the cloud</a>.</p>
-      <p>He lives with his <a href="https://aikidolittlewarriors.com/#instructor">partner</a> in a hundred and thirty years old house in Berkeley, California.</p>
+      <p>Shay Elkin is a software engineer at Confluent, building <a href="https://www.confluent.io/cloud-kafka/">Kafka for the cloud</a>.</p>
     </div>
   </div>
 #+end_src
