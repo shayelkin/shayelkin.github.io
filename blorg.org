@@ -19,9 +19,9 @@
     <body>
       <header>
         <h1>
-          <a href="{{ .PermaLink }}">{{ if .Title }}{{ .Title }}{{ else }}Shay Elkin{{ end }}</a>
+          <a href="{{ .PermaLink }}">{{ or .Title "Shay Elkin"}}</a>
         </h1>
-        <nav><a href="/dm/">&#x1F5E9;</a></nav>
+        <nav><a href="/dm/">💬</a></nav>
       </header>
       {{ if ne .Date.Unix 0 }}
       <p class="date"><date>{{ .Date.Format "January 02, 2006" }}</date></p>
@@ -40,7 +40,7 @@
 #+begin_src html
   </main>
   <footer>
-  This website is hosted on GitHub Pages. They <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection">collect some data about visitors</a>.
+  <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection">Data collection notice</a>
   </footer>
   </body></html>
 #+end_src
