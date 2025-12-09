@@ -207,7 +207,7 @@ header nav {
 }
 
 .posts {
-    border-top: 1px solid var(--border-color);
+    padding-bottom: 3em;
     margin: auto 0;
     list-style: none;
 }
@@ -248,4 +248,9 @@ footer {
     right: 1em;
     position: fixed;
     z-index: 1000;
+}
+
+.about {
+    display: flex;
+    border-top: 1px solid var(--border-color);
 }

@@ -19,9 +19,12 @@
     <body>
       <header>
         <h1>
-          <a href="{{ .PermaLink }}">{{ or .Title "Shay Elkin"}}</a>
+          {{ if .Title }}<a href="{{ .PermaLink }}">{{ .Title }}</a> &bull; {{ end }}
+          <a href="/">Shay Elkin</a>
         </h1>
-        <nav><a href="/dm/">💬</a></nav>
+        <nav>
+          <a href="/dm/">💬</a>
+        </nav>
       </header>
       {{ if ne .Date.Unix 0 }}
       <p class="date"><date>{{ .Date.Format "January 02, 2006" }}</date></p>
@@ -49,7 +52,6 @@
 #+name: index
 #+begin_src html
   {{ template "head" . }}
-  {{ template "about" . }}
   <ul class="posts">
     {{ range .Pages }}
     <li class="post"><a href="{{ .PermaLink }}">
@@ -57,6 +59,7 @@
     </a></li>
     {{ end }}
   </ul>
+  {{ template "about" . }}
   </main>
   {{ template "footer" . }}
 #+end_src
@@ -64,12 +67,12 @@
 ** about
 #+name: about
 #+begin_src html
-  <div style="display: flex;" >
+  <div class="about">
     <figure>
       <img src="/me.jpg" title="Shay and a friend" alt="Shay Elkin, wearing blue sunglasses and an olive colored shirt, poses outdoor, next to a big black dog wearing a Santa Hat." />
     </figure>
     <div style="margin: 0 1em;">
-      <p>Shay Elkin is a software engineer at Confluent, building <a href="https://www.confluent.io/cloud-kafka/">Kafka for the cloud</a>.</p>
+      <p><a href="/">Shay Elkin</a> is a software engineer at Confluent, building <a href="https://www.confluent.io/cloud-kafka/">Kafka for the cloud</a>.</p>
     </div>
   </div>
 #+end_src
@@ -79,8 +82,6 @@
 #+begin_src html
   {{ template "head" . }}
   <div class="content">{{ .Content }}</div>
-  <div style="border-top: 1px solid;">
   {{ template "about" . }}
-  </div>
   {{ template "footer" . }}
 #+end_src
