@@ -2,17 +2,17 @@
 #+date: 2023-01-17
 
 If you were on a video call with me, you must've seen the prints hanging
-behind me. Colleagues often ask about them:
+behind me. My colleagues often ask about them.
 
-Hanging to my left is a signed print by [[https://www.davidreeb.com/][David Reeb]] of his 2021 painting titled
+Hanging to my left is a signed print by [[https://www.davidreeb.com/][David Reeb]] of his 2021 painting, titled
 /Two Emperors (Hadrianus & Vespasian)/.
 
 #+ATTR_HTML: :title David Reev, Two Emperors (Hadrianus & Vespasian) (2021)
 #+ATTR_HTML: :alt Black and white print depicting two classical Roman emperor busts side by side, defaced with crude black markings of oversized sunglasses and exaggerated toothy grins drawn over their faces
 [[./home-office-art-reeb.jpg]]
 
-Mr. Reeb had the following to say about it (published in [[https://tohumagazine.com/he/article/%D7%97%D7%A0%D7%95%D7%AA-%D7%98%D7%A4%D7%98%D7%99%D7%9D-%D7%A9%D7%99%D7%97%D7%94-%D7%A2%D7%9D-%D7%93%D7%95%D7%93-%D7%A8%D7%99%D7%91][Tohu Magazine, 2021]];
-translation mine):
+Mr. Reeb had the following to say about this painting when interviewed for
+[[https://tohumagazine.com/he/article/%D7%97%D7%A0%D7%95%D7%AA-%D7%98%D7%A4%D7%98%D7%99%D7%9D-%D7%A9%D7%99%D7%97%D7%94-%D7%A2%D7%9D-%D7%93%D7%95%D7%93-%D7%A8%D7%99%D7%91][Tohu Magazine]] in 2021:
 
 #+BEGIN_QUOTE
 Take here those portraits […] the “tyrant” emperors who are another model of
@@ -20,7 +20,7 @@ politicians. To me, they and Putin represent something similar, they represent
 authority, a splendor that is inherently ridiculous.
 #+END_QUOTE
 
-On the wall to my right hangs a reproduction of a [[https://fdr.artifacts.archives.gov/en/objects/20669/learn-to-operate-a-7000000-sub][U.S. Navy recruitment poster
+On the wall to my right hangs a reproduction of a genuine [[https://fdr.artifacts.archives.gov/en/objects/20669/learn-to-operate-a-7000000-sub][U.S. Navy recruitment poster
 from 1944]], captioned /Learn To Operate a $7,000,000 Sub/.
 
 #+ATTR_HTML: :title Learn To Operate A $7,000,000 Sub (1944)

@@ -1,21 +1,22 @@
 :root {
     --bg-color: #fff;
-    --light-bg-color: #eee;
     --border-color: #ccc;
     --hl-color: #3cab3b;
-    --text-color: #000;
+    --light-bg-color: #eee;
     --light-text-color: #aaa;
+    --text-color: #000;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-color: #000;
-        --light-bg-color: #333;
+        --bg-color: rgb(17, 24, 39);
         --border-color: #aaa;
-        --text-color: #fff;
         --hl-color: #b4eeb4;
-        --light-text-color: #eee;
-    } }
+        --light-bg-color: #1f2937;
+        --light-text-color: #ccc;
+        --text-color: #fff;
+    }
+}
 
 * {
     box-sizing: border-box;
@@ -30,16 +31,15 @@ html {
     word-wrap: break-word;
     margin: 0 auto;
     padding: 1.5em;
-
     background-color: var(--bg-color);
     color: var(--text-color);
 }
 
 @media (min-width: 768px) {
     html {
-        font-size: 125%;
         max-width: 769px;
-    } }
+    }
+}
 
 h1, h2, h3, h4 {
     line-height: 1.25;
@@ -49,6 +49,7 @@ a {
     color: var(--hl-color);
     text-decoration: none;
 }
+
 a:hover, a:focus, a:active {
     background-color: var(--light-bg-color);
 }
@@ -57,6 +58,7 @@ p {
     margin: 1em 0;
     line-height: 1.5;
 }
+
 p code {
     padding: 0.05em 0.2em;
     border: 1px solid var(--border-color);
@@ -65,9 +67,11 @@ p code {
 ol, ul {
     margin: 1em;
 }
+
 ol li ol, ol li ul, ul li ol, ul li ul {
     margin: 0 2em;
 }
+
 ol li p, ul li p {
     margin: 0;
 }
@@ -75,9 +79,11 @@ ol li p, ul li p {
 dl {
     font-family: monospace, monospace;
 }
+
 dl dt {
     font-weight: bold;
 }
+
 dl dd {
     margin: 1em;
 }
@@ -100,22 +106,27 @@ table {
     caption-side: bottom;
     margin-bottom: 2em;
 }
+
 table * {
     border: none;
 }
+
 table thead, table tr {
     display: table;
     table-layout: fixed;
     width: 100%;
 }
+
 table tr:nth-child(even) {
     background-color: var(--light-bg-color);
 }
+
 table tbody {
     display: block;
     max-height: 70vh;
     overflow-y: auto;
 }
+
 table td, table th {
     padding: 0.25em;
 }
@@ -151,6 +162,7 @@ table, .highlight > pre, pre.example {
 figure {
     margin: 1em 0;
 }
+
 figure figcaption {
     font-size: 0.75em;
     text-align: center;
@@ -204,7 +216,7 @@ header nav {
     justify-content: space-between;
     align-items: center;
     /* display: block; */
-     padding: 0.25em 0;
+    padding: 0.25em 0;
     font-weight: light;
 }
 .posts .post a:hover, .posts .post a:focus, .posts .post a:active {
@@ -216,22 +228,10 @@ header nav {
 }
 
 date {
-    /* font-family: monospace, monospace; */
     font-size: 0.8rem;
     vertical-align: middle;
     color: var(--light-text-color);
 }
-
-/* .posts .post a { */
-/*     display: flex; */
-/*     justify-content: space-between; */
-/*     align-items: center; */
-/* } */
-/* .posts .post date, .date { */
-/*     font-size: 0.7rem; */
-/*     vertical-align: middle; */
-/*     padding-left: 2rem; */
-/* } */
 
 .date {
     text-align: right;

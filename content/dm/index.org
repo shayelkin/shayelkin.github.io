@@ -1,3 +1,4 @@
-#+TITLE: Signal
-To message me on [[https://signal.org][Signal]], click [[https://signal.me/#eu/wAJwOC1XrORc7jHEEtk8rnQNpZ2uirFwYciwxhBVYB2-A4sYHYREeqedpHsv28h][this link]] or scan the following QR code:
+#+TITLE: Message Me on Signal
+Use [[https://signal.me/#eu/wAJwOC1XrORc7jHEEtk8rnQNpZ2uirFwYciwxhBVYB2-A4sYHYREeqedpHsv28h][this link]] or scan the QR code below.
+#+ATTR_HTML: :alt QR code for the link above.
 [[./signal_qr.png]]
